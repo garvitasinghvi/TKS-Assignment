@@ -22,6 +22,10 @@ Desired JSON and Fibonacci Series on console
 
 Blockly Integrated
 
+Used Bootstrap and SASS
+
+Responsive Screens
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
