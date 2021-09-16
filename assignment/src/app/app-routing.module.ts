@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { IndexComponent } from './index/index.component';
 import { JobComponent } from './job/job.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'job',
+    redirectTo: 'index',
     pathMatch: 'full'
   },
   {
     path:'job',
     component:JobComponent
+  },
+  {
+    path:'index',
+    component:IndexComponent
   }
 ];
 

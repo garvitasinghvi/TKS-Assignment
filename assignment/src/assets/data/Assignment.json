@@ -1,0 +1,685 @@
+{
+  "id": 295,
+  "name": "CS skill 1",
+  "order": 1,
+  "creationdate": "2020-03-11T07:25:59.374",
+  "lastupdateddate": "0001-01-01T00:00:00",
+  "systemscenario": [
+    {
+      "id": 537,
+      "name": "default_scenario",
+      "exstatus": "Not_Run",
+      "processbranch": [
+        {
+          "id": 639,
+          "order": 1,
+          "name": "default",
+          "exstatus": "Not_Run",
+          "processflow": [
+            {
+              "id": 138,
+              "instanceid": 1486,
+              "name": "New_PF9",
+              "order": 1,
+              "creationdate": "2020-03-11T07:25:59.374",
+              "lastupdateddate": "0001-01-01T00:00:00",
+              "type": "UFT",
+              "exstatus": "Not_Run",
+              "thumbnailpath": "",
+              "processscenario": [
+                {
+                  "id": 3542,
+                  "name": "1",
+                  "exstatus": "Not_Run",
+                  "isactive": false,
+                  "componentbranch": [
+                    {
+                      "id": 533,
+                      "component": [
+                        {
+                          "id": 17,
+                          "instanceid": 899,
+                          "name": "Capture Reference Number from Status Line",
+                          "parentcomponentid": -1,
+                          "order": 1,
+                          "type": "UFT",
+                          "thumbnailpath": "",
+                          "versionfolderpath": "",
+                          "parameter": [
+                            {
+                              "id": 85,
+                              "name": "Reference_Number_Out",
+                              "description": "input=false",
+                              "value": "xcfg",
+                              "columnquery": null,
+                              "acquirerule": null
+                            }
+                          ]
+                        },
+                        {
+                          "id": 38,
+                          "instanceid": 900,
+                          "name": "LOV Window_Index",
+                          "parentcomponentid": -1,
+                          "order": 2,
+                          "type": "UFT",
+                          "thumbnailpath": "",
+                          "versionfolderpath": "",
+                          "parameter": [
+                            {
+                              "id": 239,
+                              "name": "Select_Value",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": "UNIQUEID"
+                            },
+                            {
+                              "id": 240,
+                              "name": "Index_Value",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": "nbsdknk",
+                              "acquirerule": "Constant"
+                            }
+                          ]
+                        },
+                        {
+                          "id": 36,
+                          "instanceid": 901,
+                          "name": "LOV Window",
+                          "parentcomponentid": -1,
+                          "order": 3,
+                          "type": "UFT",
+                          "thumbnailpath": "",
+                          "versionfolderpath": "",
+                          "parameter": [
+                            {
+                              "id": 238,
+                              "name": "Select_Value",
+                              "description": "input=true",
+                              "value": "<TODAY>",
+                              "columnquery": null,
+                              "acquirerule": null
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 3543,
+                  "name": "2",
+                  "exstatus": "Not_Run",
+                  "isactive": false,
+                  "componentbranch": [
+                    {
+                      "id": 533,
+                      "component": [
+                        {
+                          "id": 17,
+                          "instanceid": 899,
+                          "name": "Capture Reference Number from Status Line",
+                          "parentcomponentid": -1,
+                          "order": 1,
+                          "type": "UFT",
+                          "thumbnailpath": "",
+                          "versionfolderpath": "",
+                          "parameter": [
+                            {
+                              "id": 85,
+                              "name": "Reference_Number_Out",
+                              "description": "input=false",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": null
+                            }
+                          ]
+                        },
+                        {
+                          "id": 38,
+                          "instanceid": 900,
+                          "name": "LOV Window_Index",
+                          "parentcomponentid": -1,
+                          "order": 2,
+                          "type": "UFT",
+                          "thumbnailpath": "",
+                          "versionfolderpath": "",
+                          "parameter": [
+                            {
+                              "id": 239,
+                              "name": "Select_Value",
+                              "description": "input=true",
+                              "value": "<UNIQUEID>",
+                              "columnquery": null,
+                              "acquirerule": "UNIQUEID"
+                            },
+                            {
+                              "id": 240,
+                              "name": "Index_Value",
+                              "description": "input=true",
+                              "value": "nbsdknk",
+                              "columnquery": "nbsdknk",
+                              "acquirerule": "Constant"
+                            }
+                          ]
+                        },
+                        {
+                          "id": 36,
+                          "instanceid": 901,
+                          "name": "LOV Window",
+                          "parentcomponentid": -1,
+                          "order": 3,
+                          "type": "UFT",
+                          "thumbnailpath": "",
+                          "versionfolderpath": "",
+                          "parameter": [
+                            {
+                              "id": 238,
+                              "name": "Select_Value",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": null
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 150,
+              "instanceid": 1501,
+              "name": "loop with param null",
+              "order": 2,
+              "creationdate": "2020-03-11T07:25:59.374",
+              "lastupdateddate": "0001-01-01T00:00:00",
+              "type": "UFT",
+              "exstatus": "Not_Run",
+              "thumbnailpath": "",
+              "processscenario": [
+                {
+                  "id": 3560,
+                  "name": "1",
+                  "exstatus": "Not_Run",
+                  "isactive": false,
+                  "componentbranch": [
+                    {
+                      "id": 611,
+                      "name": "Loop 1",
+                      "componentbranchcondition": [
+                        {
+                          "id": 2164,
+                          "groupname": "Loop 1",
+                          "exstatus": "Not_Run",
+                          "count": 1,
+                          "componentbranch": [
+                            {
+                              "id": 610,
+                              "component": [
+                                {
+                                  "id": 9,
+                                  "instanceid": 976,
+                                  "name": "no_param",
+                                  "parentcomponentid": -1,
+                                  "order": 1,
+                                  "type": "UFT",
+                                  "thumbnailpath": "",
+                                  "versionfolderpath": ""
+                                },
+                                {
+                                  "id": 36,
+                                  "instanceid": 977,
+                                  "name": "LOV Window",
+                                  "parentcomponentid": -1,
+                                  "order": 2,
+                                  "type": "UFT",
+                                  "thumbnailpath": "",
+                                  "versionfolderpath": "",
+                                  "parameter": [
+                                    {
+                                      "id": 238,
+                                      "name": "Select_Value",
+                                      "description": "input=true",
+                                      "value": "<TODAY>",
+                                      "columnquery": null,
+                                      "acquirerule": null
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 235,
+              "instanceid": 1502,
+              "name": "loop three",
+              "order": 3,
+              "creationdate": "2020-03-11T07:25:59.374",
+              "lastupdateddate": "0001-01-01T00:00:00",
+              "type": "UFT",
+              "exstatus": "Not_Run",
+              "thumbnailpath": "C:\\Dev_Publish_Integration_DB\\Rainier.Web\\images\\screen-clips\\Oracle_kit\\processflow\\loop three.png",
+              "processscenario": [
+                {
+                  "id": 3561,
+                  "name": "1",
+                  "exstatus": "Not_Run",
+                  "isactive": false,
+                  "componentbranch": [
+                    {
+                      "id": 914,
+                      "component": [
+                        {
+                          "id": 21,
+                          "instanceid": 1374,
+                          "name": "Child Ranges RANGE Table",
+                          "parentcomponentid": -1,
+                          "order": 1,
+                          "type": "UFT",
+                          "thumbnailpath": "",
+                          "versionfolderpath": "",
+                          "parameter": [
+                            {
+                              "id": 101,
+                              "name": "Record_Number_Out",
+                              "description": "input=false",
+                              "value": "cfvb",
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 102,
+                              "name": "AddEditLine",
+                              "description": "input=true",
+                              "value": "<UNIQUEID>",
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 103,
+                              "name": "Search_Column",
+                              "description": "input=true",
+                              "value": "<SSN>",
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 104,
+                              "name": "Search_Value",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 105,
+                              "name": "From",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 106,
+                              "name": "To",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 107,
+                              "name": "Include",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 108,
+                              "name": "Button_Label",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": null
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 916,
+                      "name": "Loop 1",
+                      "componentbranchcondition": [
+                        {
+                          "id": 2165,
+                          "groupname": "Loop 1",
+                          "exstatus": "Not_Run",
+                          "count": 1,
+                          "componentbranch": [
+                            {
+                              "id": 915,
+                              "component": [
+                                {
+                                  "id": 22,
+                                  "instanceid": 1375,
+                                  "name": "Click and Wait For Notification",
+                                  "parentcomponentid": -1,
+                                  "order": 2,
+                                  "type": "UFT",
+                                  "thumbnailpath": "",
+                                  "versionfolderpath": "",
+                                  "parameter": [
+                                    {
+                                      "id": 109,
+                                      "name": "Source_Form_Title",
+                                      "description": "input=true",
+                                      "value": null,
+                                      "columnquery": null,
+                                      "acquirerule": null
+                                    },
+                                    {
+                                      "id": 110,
+                                      "name": "Wait_Time_Seconds",
+                                      "description": "input=true",
+                                      "value": "300",
+                                      "columnquery": null,
+                                      "acquirerule": null
+                                    },
+                                    {
+                                      "id": 111,
+                                      "name": "ButtonLabel",
+                                      "description": "input=true",
+                                      "value": null,
+                                      "columnquery": null,
+                                      "acquirerule": null
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 917,
+                      "component": [
+                        {
+                          "id": 14,
+                          "instanceid": 1376,
+                          "name": "Attachments Main Tab Table",
+                          "parentcomponentid": -1,
+                          "order": 3,
+                          "type": "UFT",
+                          "thumbnailpath": "",
+                          "versionfolderpath": "",
+                          "parameter": [
+                            {
+                              "id": 63,
+                              "name": "AddEditLine",
+                              "description": "input=true",
+                              "value": "6",
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 64,
+                              "name": "Search_Column",
+                              "description": "input=true",
+                              "value": "test2",
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 65,
+                              "name": "Search_Value",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 66,
+                              "name": "Sequence",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 67,
+                              "name": "Category",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 68,
+                              "name": "Description",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 69,
+                              "name": "Data_Type",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 70,
+                              "name": "May_Be_Changed",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 71,
+                              "name": "Short_Text",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": null
+                            },
+                            {
+                              "id": 72,
+                              "name": "Button_Label",
+                              "description": "input=true",
+                              "value": null,
+                              "columnquery": null,
+                              "acquirerule": null
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 919,
+                      "name": "Loop 2",
+                      "componentbranchcondition": [
+                        {
+                          "id": 2166,
+                          "groupname": "Loop 2",
+                          "exstatus": "Not_Run",
+                          "count": 1,
+                          "componentbranch": [
+                            {
+                              "id": 918,
+                              "component": [
+                                {
+                                  "id": 23,
+                                  "instanceid": 1377,
+                                  "name": "Close Oracle Apps_Forms",
+                                  "parentcomponentid": -1,
+                                  "order": 4,
+                                  "type": "UFT",
+                                  "thumbnailpath": "",
+                                  "versionfolderpath": ""
+                                },
+                                {
+                                  "id": 16,
+                                  "instanceid": 1378,
+                                  "name": "Capture Data from Text File",
+                                  "parentcomponentid": -1,
+                                  "order": 5,
+                                  "type": "UFT",
+                                  "thumbnailpath": "",
+                                  "versionfolderpath": "",
+                                  "parameter": [
+                                    {
+                                      "id": 81,
+                                      "name": "File_Name_With_Path",
+                                      "description": "input=true",
+                                      "value": "NA",
+                                      "columnquery": null,
+                                      "acquirerule": null
+                                    },
+                                    {
+                                      "id": 82,
+                                      "name": "Left_String",
+                                      "description": "input=true",
+                                      "value": null,
+                                      "columnquery": null,
+                                      "acquirerule": null
+                                    },
+                                    {
+                                      "id": 83,
+                                      "name": "Right_String",
+                                      "description": "input=true",
+                                      "value": null,
+                                      "columnquery": null,
+                                      "acquirerule": null
+                                    },
+                                    {
+                                      "id": 84,
+                                      "name": "Text_Out",
+                                      "description": "input=false",
+                                      "value": null,
+                                      "columnquery": null,
+                                      "acquirerule": null
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 921,
+                      "name": "Loop 3",
+                      "componentbranchcondition": [
+                        {
+                          "id": 2167,
+                          "groupname": "Loop 3",
+                          "exstatus": "Not_Run",
+                          "count": 1,
+                          "componentbranch": [
+                            {
+                              "id": 920,
+                              "component": [
+                                {
+                                  "id": 17,
+                                  "instanceid": 1379,
+                                  "name": "Capture Reference Number from Status Line",
+                                  "parentcomponentid": -1,
+                                  "order": 6,
+                                  "type": "UFT",
+                                  "thumbnailpath": "",
+                                  "versionfolderpath": "",
+                                  "parameter": [
+                                    {
+                                      "id": 85,
+                                      "name": "Reference_Number_Out",
+                                      "description": "input=false",
+                                      "value": "xx",
+                                      "columnquery": null,
+                                      "acquirerule": null
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 153,
+              "instanceid": 1503,
+              "name": "loop with only null param comp",
+              "order": 4,
+              "creationdate": "2020-03-11T07:25:59.374",
+              "lastupdateddate": "0001-01-01T00:00:00",
+              "type": "UFT",
+              "exstatus": "Not_Run",
+              "thumbnailpath": "",
+              "processscenario": [
+                {
+                  "id": 3562,
+                  "name": "1",
+                  "exstatus": "Not_Run",
+                  "isactive": false,
+                  "componentbranch": [
+                    {
+                      "id": 624,
+                      "name": "Loop 1",
+                      "componentbranchcondition": [
+                        {
+                          "id": 1224,
+                          "groupname": "Loop 1",
+                          "exstatus": "Not_Run",
+                          "count": 1,
+                          "componentbranch": [
+                            {
+                              "id": 623,
+                              "component": [
+                                {
+                                  "id": 9,
+                                  "instanceid": 991,
+                                  "name": "no_param",
+                                  "parentcomponentid": -1,
+                                  "order": 1,
+                                  "type": "UFT",
+                                  "thumbnailpath": "",
+                                  "versionfolderpath": ""
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
